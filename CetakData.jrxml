@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="684f5d9e-5733-4ab7-b02a-40874dccc1ab">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="13"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[Select DISTINCT siswa.NISN,siswa.nama,siswa.Umur,siswa.Alamat,siswa.NoHp,guru.Nama_Guru,ruang.Nama_Ruang FROM siswa,guru,ruang]]>
+	</queryString>
+	<field name="NISN" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Umur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NoHp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Guru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Ruang" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="37a65ddb-c2f4-4713-a8e0-6e6cc648959e" x="255" y="0" width="352" height="60"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Sekolah Dasar Negeri 001 Seberida]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="88de0c1e-4982-41a2-8ce4-43b5ba93f978" x="0" y="0" width="151" height="35"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[DATA SISWA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="7b9011a2-4778-4bbf-9be2-8c84b47d0f1d" x="0" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[NISN Siswa : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7b9011a2-4778-4bbf-9be2-8c84b47d0f1d" x="100" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nama Siswa : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7b9011a2-4778-4bbf-9be2-8c84b47d0f1d" x="200" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Umur Siswa : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7b9011a2-4778-4bbf-9be2-8c84b47d0f1d" x="300" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Alamat Siswa : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7b9011a2-4778-4bbf-9be2-8c84b47d0f1d" x="400" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nomor HP Orang Tua : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7b9011a2-4778-4bbf-9be2-8c84b47d0f1d" x="528" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nama Guru : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7b9011a2-4778-4bbf-9be2-8c84b47d0f1d" x="628" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nama Ruang : ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement uuid="e89a4e55-9877-44d6-b05e-c51cc238111f" x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{NISN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e89a4e55-9877-44d6-b05e-c51cc238111f" x="100" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e89a4e55-9877-44d6-b05e-c51cc238111f" x="200" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Umur}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e89a4e55-9877-44d6-b05e-c51cc238111f" x="300" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e89a4e55-9877-44d6-b05e-c51cc238111f" x="400" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{NoHp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e89a4e55-9877-44d6-b05e-c51cc238111f" x="628" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Nama_Ruang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e89a4e55-9877-44d6-b05e-c51cc238111f" x="528" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Nama_Guru}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
